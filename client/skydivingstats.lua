@@ -293,7 +293,7 @@ function SkydivingStats:LocalPlayerInput( args )
 end
 
 function SkydivingStats:ModuleLoad()
-	Events:FireRegisteredEvent( "HelpAddItem",
+	Events:Fire( "HelpAddItem",
 		{
 			name = "Skydiving Stats",
 			text = 
@@ -305,7 +305,7 @@ function SkydivingStats:ModuleLoad()
 end
 
 function SkydivingStats:ModuleUnload()
-	Events:FireRegisteredEvent( "HelpRemoveItem",
+	Events:Fire( "HelpRemoveItem",
 		{
 			name = "Skydiving Stats"
 		} )
